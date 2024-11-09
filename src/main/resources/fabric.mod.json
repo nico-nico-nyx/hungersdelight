@@ -9,10 +9,10 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/nico-nico-nyx/hungersdelight"
 	},
 	"license": "MIT",
-	"icon": "assets/modtemplate/icon.png",
+	"icon": "assets/hungersdelight/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
