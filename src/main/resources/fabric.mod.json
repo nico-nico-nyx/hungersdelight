@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hungersdelight",
+	"version": "${version}",
+	"name": "Hunger's Delight",
+	"description": "A rebalance of hunger for Farmer's Delight Refabricated so you can enjoy food more often.",
+	"authors": [
+		"Nico_Nico_Nyx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/modtemplate/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"niconiconyx.hungersdelight.HungersDelight"
+		],
+		"client": [
+			"niconiconyx.hungersdelight.HungersDelightClient"
+		],
+		"fabric-datagen": [
+			"niconiconyx.hungersdelight.HungersDelightDataGenerator"
+		]
+	},
+	"mixins": [
+		"hungersdelight.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"farmersdelight": "*"
+	}
+}
