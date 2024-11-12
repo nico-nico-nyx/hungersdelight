@@ -3,7 +3,12 @@
 	"package": "niconiconyx.hungersdelight.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"HungerManagerDelight",
+		"PlayerEntityDelight",
+		"PlayerRespawn"
+	],
+	"client": [
+		"ClientPlayerEntityDelight"
 	],
 	"injectors": {
 		"defaultRequire": 1
