@@ -64,10 +64,12 @@ public abstract class HungerManagerDelight {
 
         if(Config.useShieldExhaustion){
             if (player.getActiveItem().getItem() == Items.SHIELD){
-                shieldHungerTickTimer++;
                 if (shieldHungerTickTimer >= Config.shieldExhaustionTickRate){
-                    exhaustion += Config.shieldExhaustionAmount;
-                    addExhaustion(exhaustion);
+                    addExhaustion(Config.shieldExhaustionAmount);
+                    shieldHungerTickTimer = 0;
+                }
+                else{
+                    shieldHungerTickTimer++;
                 }
             }
         }
