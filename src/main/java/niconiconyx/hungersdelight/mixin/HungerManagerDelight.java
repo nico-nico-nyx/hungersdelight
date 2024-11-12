@@ -35,7 +35,7 @@ public abstract class HungerManagerDelight {
 
     @ModifyVariable(method = "update(Lnet/minecraft/entity/player/PlayerEntity;)V", at = @At(value = "INVOKE_ASSIGN", target = "Lnet/minecraft/world/World;getDifficulty()Lnet/minecraft/world/Difficulty;"), ordinal = 0)
     public Difficulty hungerOnPeaceful(Difficulty originalDifficulty) {
-        if (originalDifficulty.equals(Difficulty.PEACEFUL) && !Config.hungerInPeaceful) {
+        if (originalDifficulty.equals(Difficulty.PEACEFUL) && Config.hungerInPeaceful) {
             return Difficulty.EASY;
         }
         return originalDifficulty;
