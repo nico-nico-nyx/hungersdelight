@@ -52,8 +52,7 @@ public abstract class HungerManagerDelight {
 
         if(Config.usePassiveExhaustion){
             if (passiveHungerTickTimer >= Config.passiveExhaustionTickRate){
-                exhaustion += Config.passiveExhaustionAmount;
-                addExhaustion(exhaustion);
+                addExhaustion(Config.passiveExhaustionAmount);
                 passiveHungerTickTimer = 0;
             }
             else{
