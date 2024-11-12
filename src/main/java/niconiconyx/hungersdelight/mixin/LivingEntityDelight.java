@@ -48,7 +48,10 @@ public abstract class LivingEntityDelight extends Entity {
             }
             else{
                 player.getHungerManager().setSaturationLevel(0);
-                player.getHungerManager().setFoodLevel(Config.hungerOnWakingUp);
+                if (player.getHungerManager().getFoodLevel() >= Config.hungerOnWakingUp){
+                    player.getHungerManager().setFoodLevel(Config.hungerOnWakingUp);
+                }
+
             }
             startSleep = 0;
         }
