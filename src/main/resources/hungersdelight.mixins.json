@@ -5,7 +5,8 @@
 	"mixins": [
 		"HungerManagerDelight",
 		"PlayerEntityDelight",
-		"PlayerRespawn"
+		"PlayerRespawn",
+		"LivingEntityDelight"
 	],
 	"client": [
 		"ClientPlayerEntityDelight"

@@ -5,6 +5,7 @@ public class Config extends ConfigBuilder
     public static int spawnHealth = 20;
     public static int spawnHunger = 20;
 
+    public static boolean usePassiveExhaustion = true;
     public static int passiveExhaustionTickRate = 80;
     public static float passiveExhaustionAmount = 0.1F;
 
@@ -17,7 +18,7 @@ public class Config extends ConfigBuilder
     public static float swimmingExhaustionMultiplier = 0.1F;
     public static float walkingUnderwaterExhaustionMultiplier = 0.1F;
     public static float walkingOnWaterExhaustionMultiplier = 0.1F;
-    public static boolean disableShieldExhaustion = false;
+    public static boolean useShieldExhaustion = true;
     public static int shieldExhaustionTickRate = 80;
     public static float shieldExhaustionAmount = 0.0F;
     public static boolean useDynamicSleepHungerCost = false;

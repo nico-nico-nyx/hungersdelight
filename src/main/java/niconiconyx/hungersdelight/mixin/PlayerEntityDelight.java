@@ -15,14 +15,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerEntity.class)
 public class PlayerEntityDelight {
-    @Redirect(
+    /*@Redirect(
             method = "Lnet/minecraft/entity/player/PlayerEntity;tickMovement()V",
             at = @At(value = "FIELD",
                     opcode = Opcodes.GETSTATIC,
                     target = "Lnet/minecraft/world/Difficulty;PEACEFUL:Lnet/minecraft/world/Difficulty;"))
     private Difficulty getDifficulty() {
         return Difficulty.NORMAL;
-    }
+    }*/
 
     @ModifyArg(method = "jump", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;addExhaustion(F)V", ordinal = 0), index = 0)
     private float actionHunger$changeSprintJumpExhaustionAmount(float _original) {
